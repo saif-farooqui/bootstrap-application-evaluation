@@ -1,3 +1,4 @@
 node_modules
 _config..yml
 tests/cheerio.js
+package-lock.json
