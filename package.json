@@ -1,0 +1,33 @@
+{
+  "name": "css-application",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "htmlhint": "./node_modules/.bin/htmlhint index.html",
+    "start": "node server.js",
+    "cheerio": "node tests/cheerio.js",
+    "smells": "node tests/htmlparser.js",
+    "lighthouse": "lighthouse --output csv --output-path ./responsiveness-result.csv http://localhost:8089 --quiet --chrome-flags=--headless --view"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saif-farooqui/css-application.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saif-farooqui/css-application/issues"
+  },
+  "homepage": "https://github.com/saif-farooqui/css-application#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.4",
+    "htmlhint": "^0.11.0",
+    "htmlparser2": "^3.10.1",
+    "lighthouse": "^4.1.0",
+    "lodash": "^4.17.11",
+    "puppeteer-core": "^1.13.0"
+  }
+}
